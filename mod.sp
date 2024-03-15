@@ -5,7 +5,7 @@ mod "oci_compliance" {
   color         = "#F80000"
   documentation = file("./docs/index.md")
   icon          = "/images/mods/turbot/oci-compliance.svg"
-  categories    = ["oci", "cis", "compliance", "public cloud", "security"]
+  categories    = ["oci", "cis", "compliance", "public cloud", "security", "bio"]
 
   opengraph {
     title       = "Powerpipe Mod for Oracle Cloud Infrastructure Compliance"
