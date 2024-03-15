@@ -1,6 +1,6 @@
-# Oracle Cloud Compliance Mod
+# Oracle Cloud Compliance Mod for NL BIO
 
-Run individual configuration, compliance and security controls or full compliance benchmarks for `CIS` across all your Oracle Cloud accounts.
+Run individual configuration, compliance and security controls or full compliance benchmarks for `NL BIO` across all your Oracle Cloud accounts.
 
 <img src="https://raw.githubusercontent.com/turbot/steampipe-mod-oci-compliance/main/docs/oci_compliance_dashboard.png" width="50%" type="thumbnail"/>
 <img src="https://raw.githubusercontent.com/turbot/steampipe-mod-oci-compliance/main/docs/oci_cis_v200_dashboard.png" width="50%" type="thumbnail"/>
@@ -36,7 +36,7 @@ Finally, install the mod:
 mkdir dashboards
 cd dashboards
 powerpipe mod init
-powerpipe mod install github.com/turbot/steampipe-mod-oci-compliance
+powerpipe mod install github.com/kva-oracle/steampipe-mod-oci-compliance-nl-bio
 ```
 
 ### Browsing Dashboards
@@ -48,7 +48,7 @@ steampipe service start
 ```
 
 Start the dashboard server:
-
+S
 ```sh
 powerpipe server
 ```
@@ -69,7 +69,7 @@ powerpipe benchmark list
 Run a benchmark:
 
 ```sh
-powerpipe benchmark run oci_compliance.benchmark.cis_v200
+powerpipe benchmark run oci_compliance.benchmark.bio_v220
 ```
 
 Different output formats are also available, for more information please see
@@ -89,7 +89,7 @@ vi steampipe.spvars
 Alternatively you can pass variables on the command line:
 
 ```sh
-powerpipe benchmark run oci_compliance.benchmark.cis_v200 --var 'common_dimensions=["connection_name", "region", "tenant"]'
+powerpipe benchmark run oci_compliance.benchmark.cis_bio_v220 --var 'common_dimensions=["connection_name", "region", "tenant"]'
 ```
 
 Or through environment variables:
@@ -97,7 +97,7 @@ Or through environment variables:
 ```sh
 export PP_VAR_common_dimensions='["connection_name", "region", "tenant"]'
 export PP_VAR_tag_dimensions='["Department", "Environment"]'
-powerpipe benchmark run oci_compliance.benchmark.cis_v200
+powerpipe benchmark run oci_compliance.benchmark.bio_v220
 ```
 
 ## Open Source & Contributing
