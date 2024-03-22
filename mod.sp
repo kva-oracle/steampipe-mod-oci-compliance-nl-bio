@@ -1,6 +1,6 @@
 mod "oci_compliance" {
   # Hub metadata
-  title         = "Oracle Cloud Infrastructure Compliance"
+  title         = "Oracle Cloud Infrastructure Compliance (extended with NL-BIO)"
   description   = "Run individual configuration, compliance and security controls or full compliance benchmarks for NL BIO across all of your Oracle Cloud Infrastructure accounts using Powerpipe and Steampipe."
   color         = "#F80000"
   documentation = file("./docs/index.md")
